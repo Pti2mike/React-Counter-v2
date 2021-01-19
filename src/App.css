@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px lightgrey;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stopwatch {
+  font-size: 90px;
+  margin-right: 50px;
+  color: #5c48d3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 48px;
+}
+
+.wrapper {
+  width: 1024px;
+  height: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.add-button,
+.reset-button {
+  background-color: #5c48d3;
+  outline: none;
+  border: #5c48d3;
   color: white;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-button {
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset-button {
+  margin-top: 30px;
+}
+
+.minus,
+.plus {
+  font-size: 30px;
+}
+
+.counter-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.counter {
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c48d3;
+  color: white;
+  border-radius: 10px;
+  font-size: 50px;
+}
+
+.test {
+  width: 800px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  /* A renseigner */
+}
+
+@media (max-width: 576px) {
+  /* A renseigner */
 }
